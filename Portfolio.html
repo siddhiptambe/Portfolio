@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="pflogo.jpg" alt="Logo">
+            <span>MyPortfolio</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="about-image">
+            <img src="Pic.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <p>
+                My self Siddhi Tambe. I'm a Computer Engineering student passionate about building clean,
+                scalable, and modern web applications. I enjoy solving problems,
+                learning new technologies, and creating tech-driven solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Sonic Scholar</h3>
+            <p>A game designed to help blind and deaf learn skills.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Piston Cult</h3>
+            <p>A community platform for car enthusiasts.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Class Website</h3>
+            <p>A professional website for tuition classes.</p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+     <div class="contact-form">
+
+    <div class="search-box">
+        <img src="search.png" class="icon search-icon" alt="Search">
+    
+        <input type="text" id="search" placeholder="Search by name or email">
+    
+        <img src="clear.png" class="icon clear-icon" alt="Clear" onclick="clearSearch()">
+    </div>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="number" id="phone" placeholder="Phone Number">
+        <button type="submit">Add Contact</button>
+    </form>
+
+    <ul id="contactList"></ul>
+    </div>
+</section>
+
+<footer>
+    <p>&#169; 2026 MyPortfolio | All Rights Reserved</p>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/siddhi-tambe-2599b9327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="linkedin.jpg" alt="LinkedIn" class="social linkedin">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=siddhiptambe@gmail.com" target="_blank">
+            <img src="email.png" alt="Email" class="social email">
+        </a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("3vZZiMmlBTRgxN754");
+   })();
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
